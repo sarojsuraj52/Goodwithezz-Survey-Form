@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodWithEzz Survey Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background: var(--color-darkblue);
+            background-image: linear-gradient(115deg,
+                    rgba(245, 156, 255, 0.9),
+                    rgba(105, 163, 245, 0.8)),
+                url(https://learn.g2.com/hubfs/iStock-1073922768.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        #title {
+            text-align: center;
+        }
+
+        #description {
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Poppins';
+            line-height: 1.4;
+            width: 50%;
+            margin: auto;
+        }
+
+
+        form {
+            background: rgba(27, 27, 50, 0.8);
+            padding: 2.5rem 2.5rem;
+            border-radius: 1rem;
+            width: 100%;
+            margin: auto;
+            color: white;
+            margin: auto;
+
+        }
+
+
+        .form-inputs {
+            display: block;
+            width: 90%;
+            height: 2rem;
+            padding: 0.25rem 0.75rem;
+            border: none border-radius: 0.25rem;
+        }
+
+
+        #dropdown {
+            display: block;
+            width: 95.5%;
+            height: 2rem;
+            padding: 0.25rem 0.75rem;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+
+        .input-headings {
+            margin: 0 auto 1.25rem auto;
+            padding: 0.25rem;
+        }
+
+
+        .submit-button {
+            width: 95%;
+            padding: 0.75rem;
+            background-color: #37af65;
+            color: white;
+            border-radius: 2px;
+            cursor: pointer;
+            border: none;
+            transition: all .5s;
+        }
+
+        .submit-button:hover {
+            background-color: #058d39;
+        }
+
+        #textarea {
+            width: 93%;
+        }
+
+        @media only screen and (max-width: 800px) {
+            form {
+                width: 70%;
+                height: auto;
+                margin: auto;
+            }
+
+        }
+
+        @media only screen and (max-width: 500px) {
+            form {
+                max-width: 100%;
+
+                height: auto;
+                margin: auto;
+            }
+
+            body {
+
+                height: auto;
+                width: 100%;
+                margin: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<Header>
+    <h1 id="title">GoodWithEzz Survey Form</h1>
+</header>
+
+<Body>
+    <p id="description"><i>
+            This form conducts survey on Good Deeds</i>
+    </p>
+
+    <form id="survey-form">
+
+        <div class="input-headings">
+
+            <label for="name" id="name-label"> Name </label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" class="form-inputs" required>
+            </input>
+            <br>
+            <label for="email" id="email-label"> Email </label>
+            <input id="email" type="email" name="email" placeholder="Someone@gmail.com" class="form-inputs" required>
+            </input>
+            <br>
+            <label for="number" id="number-label"> Age </label>
+            <input id="number" type="number" name="number" min="18" max="100" placeholder="Your Age" class="form-inputs"
+                required> </input>
+            <br>
+            <hr width=85%>
+            <label for="dropdown" id="model" style="width: 90vw;"> Which option describes the best role of yours?
+            </label>
+            <select id="dropdown" class="form-inputs">
+                <option disabled selected>Select your role</option>
+                <option value="Full time job"> Full Time Job</option>
+                <option value="Full time learner"> Full Time Learner </option>
+                <option value="Student"> Student</option>
+                <option value="others"> Others</option>
+                <option value="prefer not to say"> Prefer not to say</option>
+            </select>
+            <br>
+            <br>
+            <hr width=85%>
+
+            <label for="model_color" id="model_color"> <b>Would you like to recommend suraj for better placement?</b>
+            </label>
+            <br>
+            <input id="radio" type="radio" name="refer" value="Definetely">
+            <label for="model_color"> Definetely </label>
+            <br>
+            <input id="radio" type="radio" name="refer" value="Maybe">
+            <label for="model_color"> Maybe </label>
+            <br>
+            <input id="radio" type="radio" name="refer" value="Not sure">
+            <label for="" model_color"> Not sure</label>
+            <br>
+            <br>
+            <hr width=85%>
+
+            <label> <b>What is your favorite Quaity of a Good Person?</b></label>
+            <br>
+
+            <input id="checkbox" type="checkbox" name="features" value="Hardwork">
+            <label for="checkbox"> Hardwork </label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="smartwork">
+            <label for="checkbox"> Smart-work</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="Loyalty">
+            <label for="checkbox"> Loyalty </label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="Honesty">
+            <label for="checkbox">Honesty</label>
+
+
+            <br>
+            <br>
+
+            <hr width=85%>
+
+            <label> <b>What have you done for Good Deeds?</b></label>
+            <br>
+
+            <input id="checkbox" type="checkbox" name="features" value="charity">
+            <label for="checkbox"> Charity </label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="Help a friend in need">
+            <label for="checkbox">Help a friend in need</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="Donate an old cell phone">
+            <label for="checkbox"> Donate an old cell phone </label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="Donate blood">
+            <label for="checkbox">Donate blood</label>
+
+
+            <br>
+            <br>
+            <label id="textarea">Leave your comments here </label>
+            <br>
+            <textarea id="textarea" name"comment" rows="5" cols="59.5" placeholder="Enter your comment here...">
+    </textarea>
+            <br>
+
+            <input id="submit" type="submit" value="Submit" class="submit-button">
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
